@@ -1,0 +1,20 @@
+services:
+  nama-french-proxy:
+    image: zenith_proxy:latest
+    container_name: nama-french
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    volumes:
+      - /mnt/data/minecraft/proxy:/app/config
+
+  uganda-french-proxy:
+    image: zenith_proxy:latest
+    container_name: uganda-french
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    volumes:
+      - /mnt/data/minecraft/proxy:/app/config

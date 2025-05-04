@@ -1,0 +1,10 @@
+services:
+  zenith-prox:
+    image: zenith-proxy:latest
+    container_name: AFKBots-3b3fr-mc3
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    volumes:
+      - /mnt/data/minecraft/proxy/AFKBots/3b3fr:/app/config

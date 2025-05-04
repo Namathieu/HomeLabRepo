@@ -1,0 +1,11 @@
+services:
+  zenith-proxy:
+    # My Own Image made using Portainer  
+    image: zenith-proxy:latest
+    container_name: proxy-Namathieu-2b2t
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+    network_mode: "host"
+    volumes:
+      - /mnt/data/minecraft/proxy/2b2t:/app/config

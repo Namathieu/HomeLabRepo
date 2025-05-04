@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  komga:
+    container_name: Komga
+    image: gotson/komga
+    ports:
+      - 25600:25600
+    volumes:
+      - /mnt/data/komga/config:/config:rw
+      - /mnt/data/komga/ebooks:/ebooks:rw
+    environment:
+      - TZ=America/Montreal
+    restart: unless-stopped

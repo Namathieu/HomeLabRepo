@@ -1,0 +1,16 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java21
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      VERSION: 1.21.4
+      MEMORY: 4G
+      TYPE: PAPER
+
+    volumes:
+      - /mnt/data/minecraft/server/smp:/data
