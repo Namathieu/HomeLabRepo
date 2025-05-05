@@ -105,8 +105,8 @@ services:
       - TRANSMISSION_WEB_UI=transmission-web-control
       - OPENVPN_PROVIDER=PIA
       - OPENVPN_CONFIG=ca_montreal
-      - OPENVPN_USERNAME=p6341236
-      - OPENVPN_PASSWORD=z5sG7WoyzF
+      - OPENVPN_USERNAME=PIA_USERNAME
+      - OPENVPN_PASSWORD=PIA_PASSWORD
     logging:
         driver: json-file
         options:
