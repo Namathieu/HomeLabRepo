@@ -8,7 +8,7 @@ services:
       - PGID=1000
       - TZ=America/Montreal
       - VERSION=docker
-      - PLEX_CLAIM=claim-SaeUJiKcQhcK95jzHNW1
+      - PLEX_CLAIM=claim-XXXXXX
     volumes:
       - /mnt/data/plex/config:/config
       - /mnt/data/plex/Media:/Media
